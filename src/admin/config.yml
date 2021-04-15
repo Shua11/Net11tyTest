@@ -6,12 +6,13 @@ media_folder: "dist/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "posts" 
-    label: "Campaigns"
-    folder: "posts/testing"
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "date", default: "" }
