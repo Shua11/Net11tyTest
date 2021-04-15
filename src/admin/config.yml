@@ -7,8 +7,8 @@ public_folder: "/images/uploads"
 
 collections:
   - name: "posts" 
-    label: "Posts"
-    folder: "posts"
+    label: "Campaigns"
+    folder: "posts/testing"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
