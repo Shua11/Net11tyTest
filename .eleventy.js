@@ -1,4 +1,4 @@
-const fs = require('fs-extra')
+// const fs = require('fs-extra')
 
 // Rough method to clean out the dist folder...
 // fs.remove('dist')
