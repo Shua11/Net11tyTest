@@ -1,0 +1,5 @@
+!.gitignore
+.netlify
+.vscode
+node_modules
+dist
