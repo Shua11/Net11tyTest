@@ -18,17 +18,17 @@ collections:
       - { label: "Date", name: "date", widget: "date", default: "" }
       - { label: "Post Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
-      - { label: "AR Lead Source", name: "arls", widget: "number" }
-      - { label: "MO Lead Source", name: "mols", widget: "number" }
-      - { label: "OK Lead Source", name: "okls", widget: "number" }
-      - { label: "TN Lead Source", name: "tnls", widget: "number" }
-      - { label: "Other Lead Source", name: "xxls", widget: "number" }
-      - { label: "AR Lead Source Scheduled", name: "arlss", widget: "number" }
-      - { label: "MO Lead Source Scheduled", name: "molss", widget: "number" }
-      - { label: "OK Lead Source Scheduled", name: "oklss", widget: "number" }
-      - { label: "TN Lead Source Scheduled", name: "tnlss", widget: "number" }
-      - { label: "Other Lead Source Scheduled", name: "xxlss", widget: "number" }
-      - { label: "Headline Content", name: "headlineContent", widget: "markdown" }
-      - { label: "Subheading", name: "subheading", widget: "markdown" }
+      - { label: "AR Lead Source", name: "arls", widget: "number", step: "0" }
+      - { label: "MO Lead Source", name: "mols", widget: "number", step: "0" }
+      - { label: "OK Lead Source", name: "okls", widget: "number", step: "0" }
+      - { label: "TN Lead Source", name: "tnls", widget: "number", step: "0" }
+      - { label: "Other Lead Source", name: "xxls", widget: "number", step: "0" }
+      - { label: "AR Lead Source Scheduled", name: "arlss", widget: "number", step: "0" }
+      - { label: "MO Lead Source Scheduled", name: "molss", widget: "number", step: "0" }
+      - { label: "OK Lead Source Scheduled", name: "oklss", widget: "number", step: "0" }
+      - { label: "TN Lead Source Scheduled", name: "tnlss", widget: "number", step: "0" }
+      - { label: "Other Lead Source Scheduled", name: "xxlss", widget: "number", step: "0" }
+      - { label: "Headline Content", name: "headlineContent", widget: "text" }
+      - { label: "Subheading", name: "subheading", widget: "text" }
       - { label: "Facebook Analytics", name: "analyticsFbq", widget: "string" }
       - { label: "Google Analytics", name: "analyticsGtag", widget: "string" }
