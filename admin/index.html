@@ -12,8 +12,28 @@
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
-        CMS.registerPreviewStyle("/example.css");
+        CMS.registerPreviewStyle("/preview.css");
     </script>
+    <!-- <script type="module">
+        import htm from 'https://unpkg.com/htm?module'
+        const html = htm.bind(h);
+        const PostPreview = createClass({
+          render: function() {
+            return (
+              html`
+                <div>
+                  <h1 className='blogTitle'>${entry.getIn(['data', 'title'])}</h1>
+                  <caption className='blogSubTitle'>${entry.getIn(['data', 'subtitle'])}</caption>
+                  <div className='text'>${widgetFor('body')}</div>
+                </div>
+              `
+            );
+          }
+        });
+    </script>
+    <script>
+        CMS.registerPreviewTemplate("campaigns", PostPreview);
+    </script> -->
 </body>
 
 </html>
