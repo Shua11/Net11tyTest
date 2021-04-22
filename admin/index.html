@@ -14,14 +14,17 @@
     <script>
         CMS.registerPreviewStyle("/preview.css");
     </script>
+
+    <!-- The Netlify CMS uses a react component to generate the preview -->
     <script>
         var PostPreview = createClass({
           render: function() {
             var entry = this.props.entry;
-            var image = entry.getIn(['data', 'image']);
+            var image = entry.getIn(['data', 'featuredImage']);
             var bg = this.props.getAsset(image);
             return h('div', {},
               h('h1', {}, entry.getIn(['data', 'title'])),
+              h('p', {}, entry.getIn(['data', 'description'])),
               h('img', {src: bg.toString()}),
               h('div', {"className": "text"}, this.props.widgetFor('body'))
             );
@@ -29,7 +32,7 @@
         });
       
         CMS.registerPreviewTemplate("campaigns", PostPreview);
-      </script>
+    </script>
 </body>
 
 </html>
