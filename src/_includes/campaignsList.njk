@@ -1,0 +1,13 @@
+<ul>
+    {% for campaign in campaignsList %}
+        <li>
+            <strong>
+                <a href="{{ campaign.url | url }}">{{ campaign.data.title }}</a>
+            </strong>
+            -
+            <span>
+                {{ campaign.data.description }}
+            </span>
+        </li>
+    {% endfor %}
+</ul>

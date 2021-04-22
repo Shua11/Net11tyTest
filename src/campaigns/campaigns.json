@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/campaign.njk",
+    "tags": "campaigns"
+}
