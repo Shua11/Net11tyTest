@@ -5,9 +5,13 @@ backend:
 media_folder: "dist/images/uploads"
 public_folder: "/images/uploads"
 
+# display_url: https://your-site.com
+
+logo_url: /assets/light-logo.svg
+
 collections:
   - name: "posts"
-    label: "Posts"
+    label: "Campaigns"
     folder: "posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -19,14 +23,14 @@ collections:
       - { label: "Post Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
       - { label: "AR Lead Source", name: "arls", widget: "number", step: 0 }
-      - { label: "MO Lead Source", name: "mols", widget: "number", step: 0 }
-      - { label: "OK Lead Source", name: "okls", widget: "number", step: 0 }
-      - { label: "TN Lead Source", name: "tnls", widget: "number", step: 0 }
-      - { label: "Other Lead Source", name: "xxls", widget: "number", step: 0 }
       - { label: "AR Lead Source Scheduled", name: "arlss", widget: "number", step: 0 }
+      - { label: "MO Lead Source", name: "mols", widget: "number", step: 0 }
       - { label: "MO Lead Source Scheduled", name: "molss", widget: "number", step: 0 }
+      - { label: "OK Lead Source", name: "okls", widget: "number", step: 0 }
       - { label: "OK Lead Source Scheduled", name: "oklss", widget: "number", step: 0 }
+      - { label: "TN Lead Source", name: "tnls", widget: "number", step: 0 }
       - { label: "TN Lead Source Scheduled", name: "tnlss", widget: "number", step: 0 }
+      - { label: "Other Lead Source", name: "xxls", widget: "number", step: 0 }
       - { label: "Other Lead Source Scheduled", name: "xxlss", widget: "number", step: 0 }
       - { label: "Headline Content", name: "headlineContent", widget: "text" }
       - { label: "Subheading", name: "subheading", widget: "text" }
