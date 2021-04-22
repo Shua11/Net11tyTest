@@ -12,6 +12,7 @@ logo_url: /assets/light-logo.svg
 collections:
   - name: "posts"
     label: "Campaigns"
+    description: "This is a campaign"
     folder: "posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
