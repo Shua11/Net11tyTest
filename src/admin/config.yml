@@ -20,9 +20,11 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Date", name: "date", widget: "date", default: "" }
+      - { label: "Date", name: "date", widget: "datetime", default: "" }
+      - { label: "Headline Content", name: "headlineContent", widget: "text" }
+      - { label: "Subheading", name: "subheading", widget: "text" }
       - { label: "Post Body", name: "body", widget: "markdown" }
-      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      # - { label: "Featured Image", name: "featuredImage", widget: "image" }
       - { label: "AR Lead Source", name: "arls", widget: "number", step: 0 }
       - { label: "AR Lead Source Scheduled", name: "arlss", widget: "number", step: 0 }
       - { label: "MO Lead Source", name: "mols", widget: "number", step: 0 }
@@ -33,7 +35,6 @@ collections:
       - { label: "TN Lead Source Scheduled", name: "tnlss", widget: "number", step: 0 }
       - { label: "Other Lead Source", name: "xxls", widget: "number", step: 0 }
       - { label: "Other Lead Source Scheduled", name: "xxlss", widget: "number", step: 0 }
-      - { label: "Headline Content", name: "headlineContent", widget: "text" }
-      - { label: "Subheading", name: "subheading", widget: "text" }
+
       - { label: "Facebook Analytics", name: "analyticsFbq", widget: "string" }
       - { label: "Google Analytics", name: "analyticsGtag", widget: "string" }
