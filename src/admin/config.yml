@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "dist/images/uploads"
+public_folder: "/images/uploads"
+
+# display_url: https://your-site.com
+
+logo_url: /src/assets/light-logo.svg
+
+collections:
+  - name: "campaigns"
+    label: "Campaigns"
+    description: "Each campaign will create a region-wide survey page. You are only able to update specified content. If there is something more that you need please contact a developer. You are able to edit/add campaigns as often as you wish."
+    folder: "src/campaigns"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "date", default: "" }
+      - { label: "Post Body", name: "body", widget: "markdown" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - { label: "AR Lead Source", name: "arls", widget: "number", step: 0 }
+      - { label: "AR Lead Source Scheduled", name: "arlss", widget: "number", step: 0 }
+      - { label: "MO Lead Source", name: "mols", widget: "number", step: 0 }
+      - { label: "MO Lead Source Scheduled", name: "molss", widget: "number", step: 0 }
+      - { label: "OK Lead Source", name: "okls", widget: "number", step: 0 }
+      - { label: "OK Lead Source Scheduled", name: "oklss", widget: "number", step: 0 }
+      - { label: "TN Lead Source", name: "tnls", widget: "number", step: 0 }
+      - { label: "TN Lead Source Scheduled", name: "tnlss", widget: "number", step: 0 }
+      - { label: "Other Lead Source", name: "xxls", widget: "number", step: 0 }
+      - { label: "Other Lead Source Scheduled", name: "xxlss", widget: "number", step: 0 }
+      - { label: "Headline Content", name: "headlineContent", widget: "text" }
+      - { label: "Subheading", name: "subheading", widget: "text" }
+      - { label: "Facebook Analytics", name: "analyticsFbq", widget: "string" }
+      - { label: "Google Analytics", name: "analyticsGtag", widget: "string" }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Rubik:400,500&display=swap" rel="stylesheet">
+    <link href="/style/style.css" rel="stylesheet">
+
+    <!-- This is for local development -->
+    <!-- <link rel="stylesheet" href="style/style.css">  -->
+    <title>Shine Solar</title>
+    <!-- <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="https://shinesolar.github.io/Marketing-Funnel/img/shine-favicon.png" type="image/x-icon">
+
+    <script> const dev = true;</script>
+    <script src="/js/data.js"></script>
+    <script src="/js/init.js" page="landingPage"></script>
+
+    <script>
+        function test () {
+            return {{ title }}
+        }
+    </script>
+
+</head>
+    <body>
+        {{ content | safe }}
+    </body>
+</html>
