@@ -1,5 +1,5 @@
 ---
-layout: layouts/post.njk
+layout: layouts/campaign.njk
 title: Testing
 description: The first post on the Eleventy + Netlify CMS from scratch blog
 date: 2020-10-08
