@@ -14,26 +14,22 @@
     <script>
         CMS.registerPreviewStyle("/preview.css");
     </script>
-    <script type="module">
-        import htm from 'https://unpkg.com/htm?module'
-        const html = htm.bind(h);
-        const PostPreview = createClass({
+    <script>
+        var PostPreview = createClass({
           render: function() {
-            return (
-              html`
-                <div>
-                  <h1 className='blogTitle'>${entry.getIn(['data', 'title'])}</h1>
-                  <caption className='blogSubTitle'>${entry.getIn(['data', 'subtitle'])}</caption>
-                  <div className='text'>${widgetFor('body')}</div>
-                </div>
-              `
+            var entry = this.props.entry;
+            var image = entry.getIn(['data', 'image']);
+            var bg = this.props.getAsset(image);
+            return h('div', {},
+              h('h1', {}, entry.getIn(['data', 'title'])),
+              h('img', {src: bg.toString()}),
+              h('div', {"className": "text"}, this.props.widgetFor('body'))
             );
           }
         });
-    </script>
-    <script>
+      
         CMS.registerPreviewTemplate("campaigns", PostPreview);
-    </script>
+      </script>
 </body>
 
 </html>
