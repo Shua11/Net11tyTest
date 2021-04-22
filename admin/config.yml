@@ -12,9 +12,7 @@ logo_url: /assets/light-logo.svg
 collections:
   - name: "campaigns"
     label: "Campaigns"
-    description: "Each campaign will create a region-wide survey page. 
-    You are only able to update specified content. If there is something more that you need please contact a developer.
-    You are able to edit/add campaigns as often as you wish."
+    description: "Each campaign will create a region-wide survey page. You are only able to update specified content. If there is something more that you need please contact a developer. You are able to edit/add campaigns as often as you wish."
     folder: "campaigns"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
