@@ -13,10 +13,10 @@ module.exports = function (eleventyConfig) {
     // console.error(err)
     // })
 
-    eleventyConfig.addPassthroughCopy("images")
-    eleventyConfig.addPassthroughCopy("admin")
-    eleventyConfig.addPassthroughCopy("style")
-    eleventyConfig.addPassthroughCopy("assets")
+    eleventyConfig.addPassthroughCopy("src/images")
+    eleventyConfig.addPassthroughCopy("src/admin")
+    eleventyConfig.addPassthroughCopy("src/style")
+    eleventyConfig.addPassthroughCopy("src/assets")
 
     return {
         dir: {
